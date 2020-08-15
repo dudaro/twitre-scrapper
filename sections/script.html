@@ -1,0 +1,72 @@
+<template class="task-template">
+  <section id="trend-section" class="section js-section">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <br />
+        <div class="card">
+          <div class="card-divider">カテゴリーごとの収集</div>
+          <div class="card-section">
+            <fieldset id="category-filter" class="cell"></fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-divider">
+            1時間ごとの収集
+            <fieldset class="margin-left-1">
+              <input id="select-all-hour" type="checkbox"><label for="select-all-hour">全て選択</label>
+            </fieldset>
+          </div>
+          <div class="card-section">
+            <fieldset id="hour-filter" class="cell"></fieldset>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-divider">
+            1日ごとの収集
+            <fieldset class="margin-left-1">
+              <input id="select-all-day" type="checkbox"><label for="select-all-day">全て選択</label>
+            </fieldset>
+          </div>
+          <div class="card-section">
+            <fieldset id="day-filter" class="cell"></fieldset>
+          </div>
+        </div>
+
+        <div class="card width-100">
+          <div class="card-divider">
+            1週間ごとの収集
+            <fieldset class="margin-left-1">
+              <input id="select-all-week" type="checkbox"><label for="select-all-week">全て選択</label>
+            </fieldset>
+          </div>
+          <div class="card-section">
+            <fieldset id="week-filter" class="cell"></fieldset>
+          </div>
+        </div>
+
+        <div class="grid-x align-right">
+          <div class="cell">
+            <button id="start-scraping-button" type="button" class="success button">Start</button>
+            <button id="stop-scraping-button" type="button" class="alert button" disabled>Stop</button>
+            <div class="cprogress">
+              <div class="progress-bar"></div>
+              <div class="progress-percent">0%</div>
+            </div>
+            <button type="button" class="button hollow primary show-data-btn">結果を確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="result-modal modal">
+      <div class="result-section">
+        <div class="result-content"></div>
+        <button type="button" class="button primary download-btn">ダウンロード</button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      require('./assets/script')
+    </script>
+  </section>
+</template>

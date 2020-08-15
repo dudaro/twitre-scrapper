@@ -1,0 +1,22 @@
+
+/* Custom Properties */
+
+:root {
+  --color:          rgb(14, 14, 14);
+  --color-nav:      rgb(224, 224, 224);
+  --color-subtle:   rgb(60, 249, 255);
+  --color-strong:   rgb(16, 0, 158);
+  --color-link:     rgb(221, 221, 221);
+
+  --color-border:   hsl(0,0%,88%);
+  --color-bg:       rgb(3, 0, 51);
+
+  --color-accent:   black; /* Fallback */
+}
+
+
+/* Category Colors */
+
+.file-csv         { --color-accent: hsl(194, 60%, 36%); }
+.file-pdf         { --color-accent: hsl(222, 53%, 50%); }
+.file-other         { --color-accent: hsl(330, 65%, 48%); }

@@ -1,0 +1,28 @@
+<template class="task-template">
+    <div id="license-modal" class="license">
+        <div class="license-wrapper">
+            <header class="license-header">
+                <img src="assets/img/logo.png" alt="Electron API Demos">
+            </header>
+            <main class="license-sections">
+                <section class="license-section license-code">
+                    <h2 class="license-id-label">
+                        License ID: <span id="license-id"></span>
+                        <button class="copy-btn" data-clipboard-target="#license-id">
+                            <img src="assets/img/copy-icon.png" alt="Copy to clipboard">
+                        </button>
+                    </h2>
+                    <input id="license-key" type="text" placeholder="Input license key provided" />
+                </section>
+                <footer class="license-section footer">
+                    <div class="rainbow-button-wrapper">
+                        <button id="get-started" class="license-button license-validate">確認</button>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        <div id="invalid-license" class="modal">
+            <p>License key が正しくありません。もう一度ご確認をお願いします。</p>
+        </div>
+    </div>
+</template>
